@@ -1,3 +1,6 @@
+
+    <!-- Created on : Feb 8th, 2019, 8:39:38 PM
+    Author     : Peter Wachira -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,54 +11,168 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <div class="sidebar">
-
-
+       <div class="sidebar-items">
+        <img class="img-rounded" height="200px" width="200"src="resources/codeninja1.png" alt="" onclick="this.src='img/certified.png'">
+        <br><br>
+        <a href="#about">Strength</a>
+        <progress id="progressbar" value="0" max="100" ></progress>
+        <br><br>
+        <div class="ninja-practise">
+          <h4>Select your code dojo</h4>
+        </div>
+          <button type="button" name="button" onclick="javaScript-quiz" class="btn">JavaScript</button>
+          <br>
+          <button type="button" name="button" onclick="css-quiz"class="btn">Css</button>
+        </div>
+        <br>
+        </div>
+        <button type="button" name="button" onClick="reset()" class="btn"  id="reset">Retake quiz</button>
   </div>
   <body>
     <div class="container">
       <div class="jumbotron">
         <div class="heading1">
-          <h1></h1>
+          <h1>Quiz Board</h1>
+          <h4>Test your might Code Ninja</h4>
         </div>
       </div>
       <!-- jumbotron wrap -->
+      <form id="javascript-quiz">
       <div class="row">
         <div class="col-md-12">
           <div class="well">
-
-          </div>
-        </div>
+            <ol>
+              <li id="question1">Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input type="radio" name="definition" value="markup language" required>
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper text language">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper text markup language">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper markup language">
+                        Search ( );
+                      </label>
+                    </div>
+              <li id="question2">Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input type="radio" name="definition" value="markup language">
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper text language">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper text markup language">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper markup language">
+                        Search ( );
+                      </label>
+                    </div>
+              <li id="question3">Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input type="radio" name="definition" value="markup language">
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper text language">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper text markup language">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="definition" value="hyper markup language">
+                        Search ( );
+                      </label>
+                    </div>
+             <li id="question4">Which of the following is a <strong>JavaScript</strong> output method</li>
+                  <div class="radio">
+                   <label>
+                     <input type="radio" name="definition" value="markup language">
+                     alert ( );
+                   </label>
+                  </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper text language">
+                       find ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper text markup language">
+                       prompt ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper markup language">
+                       Search ( );
+                     </label>
+                   </div>
+                   <li id="question5">Which of the following is not present in <strong>Javascript</strong> </li>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper markup language">
+                       append ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper markup language">
+                        before( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper markup language">
+                        after ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" name="definition" value="hyper markup language">
+                       pretend ( );
+                     </label>
+                   </div>
+                </div>
+            </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-     
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
-    <!-- container class wrap -->
+  <!-- container class wrap -->
   <script  src="js/scripts.js"></script>
   </body>
 </html>
