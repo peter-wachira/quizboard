@@ -1,3 +1,6 @@
+
+    <!-- Created on : Feb 8th, 2019, 8:39:38 PM
+    Author     : Peter Wachira -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,54 +11,462 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <div class="sidebar">
-
-
+       <div class="sidebar-items">
+        <img class="img-rounded" height="200px" width="200"src="resources/codeninja1.png" alt="" onclick="this.src='resources/codeninjasub.png'">
+        <br><br>
+        <a href="#about">Strength</a>
+        <progress id="progressbar" value="0" max="100" ></progress>
+        <br><br>
+        <div class="ninja-practise">
+          <h4>Select your code dojo</h4>
+        </div>
+        <div class="quiz-buttons">
+          <button type="button" name="button" onclick="javascriptQuiz()" class="btn">JavaScript</button>
+          <br>
+            <div style="height:10px"class="button-spacer"></div>
+          <button type="button" name="button" onclick="htmlQuiz()"class="btn">Html</button>
+          <br>
+          <div style="height:10px"class="button-spacer"></div>
+          <button type="button" name="button" onclick="cssQuiz()"class="btn">Css</button>
+        </div>
+        <br>
+        </div>
+        <button type="button" name="button" onClick="reset()" class="btn"  id="reset">Retake quiz</button>
   </div>
   <body>
     <div class="container">
       <div class="jumbotron">
         <div class="heading1">
-          <h1></h1>
+          <h1>Quiz Board</h1>
+          <h4>Test your might Code Ninja</h4>
         </div>
       </div>
       <!-- jumbotron wrap -->
+     <div id="js-hidden">
+      <form id="javascript-quiz">
       <div class="row">
         <div class="col-md-12">
           <div class="well">
+            <ol>
 
-          </div>
-        </div>
+              <li>Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input class="count" type="radio" name="js1" value="10" required />
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js1" value="0">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js1" value="0">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js1" value="0">
+                        Search ( );
+                      </label>
+                    </div>
+              <li>Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input class="count" type="radio" name="j2" value="10">
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js2" value="0">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js2" value="0">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js2" value="0">
+                        Search ( );
+                      </label>
+                    </div>
+              <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input class="count" type="radio" name="js3" value="10">
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js3" value="0">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js3" value="0">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count" type="radio" name="js3" value="0">
+                        Search ( );
+                      </label>
+                    </div>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                  <div class="radio">
+                   <label>
+                     <input class="count" type="radio" name="js4" value="10">
+                     alert ( );
+                   </label>
+                  </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js4" value="0">
+                       find ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js4" value="0">
+                       prompt ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js4" value="0">
+                       Search ( );
+                     </label>
+                   </div>
+                   <li >Which of the following is not present in <strong>Javascript</strong> </li>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js5" value="10">
+                       append ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js5" value="0">
+                        before( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js5" value="0">
+                        after ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count" type="radio" name="js5" value="0">
+                       pretend ( );
+                     </label>
+                   </div>
+                </div>
+            </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">      
+      <button id="jsbut"onClick="jsmarks()"type="button" name="button" class="btn">Submit</button>
+      <div id="js-results">
 
-          </div>
-        </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-
-          </div>
-        </div>
+      </form>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="well">
-
-          </div>
-        </div>
-      </div>
+      <!-- javascript form wrap -->
+      <div id="css-hidden">
+       <form id="css-quiz">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="well">
+             <ol>
+               <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                    <div class="radio">
+                     <label>
+                       <input class="count1" type="radio" name="css1" value="10" required>
+                       alert ( );
+                     </label>
+                    </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css1" value="0">
+                         find ( );
+                       </label>
+                     </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css1" value="0">
+                         prompt ( );
+                       </label>
+                     </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css1" value="0">
+                         Search ( );
+                       </label>
+                     </div>
+               <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                    <div class="radio">
+                     <label>
+                       <input class="count1" type="radio" name="css2" value="10">
+                       alert ( );
+                     </label>
+                    </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css2" value="0">
+                         find ( );
+                       </label>
+                     </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css2" value="0">
+                         prompt ( );
+                       </label>
+                     </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css2" value="0">
+                         Search ( );
+                       </label>
+                     </div>
+               <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                    <div class="radio">
+                     <label>
+                       <input class="count1" type="radio" name="css3" value="10">
+                       alert ( );
+                     </label>
+                    </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css3" value="0">
+                         find ( );
+                       </label>
+                     </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css3" value="0">
+                         prompt ( );
+                       </label>
+                     </div>
+                     <div class="radio">
+                       <label>
+                         <input class="count1" type="radio" name="css3" value="0">
+                         Search ( );
+                       </label>
+                     </div>
+              <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                   <div class="radio">
+                    <label>
+                      <input class="count1" type="radio" name="css4" value="10">
+                      alert ( );
+                    </label>
+                   </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css4" value="0">
+                        find ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css4" value="0">
+                        prompt ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css4" value="0">
+                        Search ( );
+                      </label>
+                    </div>
+                    <li >Which of the following is not present in <strong>Javascript</strong> </li>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css5" value="10">
+                        append ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css5" value="0">
+                         before( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css5" value="0">
+                         after ( );
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input class="count1" type="radio" name="css5" value="0">
+                        pretend ( );
+                      </label>
+                    </div>
+                 </div>
+             </div>
+       </div>
+       <button  id="cssSubmit"onClick="js-marks"type="button" name="button" class="btn">Submit</button>
+       <div id="css-results">
+       </div>
+       </form>
+       </div>
     </div>
-    <!-- container class wrap -->
+    <!-- css form wrap -->
+    <div id="html-hidden">
+     <form id="html-quiz">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="well">
+           <ol>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                  <div class="radio">
+                   <label>
+                     <input class="count2" type="radio" name="html1" value="10" required>
+                     alert ( );
+                   </label>
+                  </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html1" value="0">
+                       find ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html1" value="0">
+                       prompt ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html1" value="0">
+                       Search ( );
+                     </label>
+                   </div>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                  <div class="radio">
+                   <label>
+                     <input class="count2" type="radio" name="html2" value="10">
+                     alert ( );
+                   </label>
+                  </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html2" value="0">
+                       find ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html2" value="0">
+                       prompt ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html2" value="0">
+                       Search ( );
+                     </label>
+                   </div>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                  <div class="radio">
+                   <label>
+                     <input class="count2" type="radio" name="html3" value="10">
+                     alert ( );
+                   </label>
+                  </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html3" value="0">
+                       find ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="htlml3" value="0">
+                       prompt ( );
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input class="count2" type="radio" name="html3" value="0">
+                       Search ( );
+                     </label>
+                   </div>
+            <li >Which of the following is a <strong>JavaScript</strong> output method</li>
+                 <div class="radio">
+                  <label>
+                    <input class="count2" type="radio" name="html4" value="10">
+                    alert ( );
+                  </label>
+                 </div>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html4" value="0">
+                      find ( );
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html4" value="0">
+                      prompt ( );
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html4" value="0">
+                      Search ( );
+                    </label>
+                  </div>
+                  <li >Which of the following is not present in <strong>Javascript</strong> </li>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html5" value="10">
+                      append ( );
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html5" value="0">
+                       before( );
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html5" value="0">
+                       after ( );
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input class="count2" type="radio" name="html5" value="0">
+                      pretend ( );
+                    </label>
+                  </div>
+               </div>
+           </div>
+     </div>
+     <button id="htmlSubmit" onClick="html-marks"type="button" name="button" class="btn">Submit</button>
+     <div id="html-results">
+
+     </div>
+     </form>
+     </div>
+     <!-- html form wrap -->
+  <!-- container class wrap -->
   <script  src="js/scripts.js"></script>
-  </body>
+  </body>     
 </html>
