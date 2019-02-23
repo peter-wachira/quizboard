@@ -2,7 +2,10 @@
     Created on : Feb 8th, 2019, 8:39:38 PM
     Author     : Peter Wachira
 */
-// scroll functions
+// page reset
+  function pageReset() {
+    window.location.reload();
+}
 // scrolldown progress bar
 $(window).scroll(function() {
   var s = $(window).scrollTop(),
@@ -15,7 +18,7 @@ $(window).scroll(function() {
 });
 // unhide buttons  Dojo options
 $(document).ready(function() {
-  $("button ").click(function javascriptQuiz(){
+  $("button#js-nav").click(function javascriptQuiz(){
     $("#css-hidden").hide();
     $("#html-hidden").hide();
     $("#js-hidden").slideToggle();
@@ -23,24 +26,24 @@ $(document).ready(function() {
 
 });
 $(document).ready(function() {
-  $("button # ").click(function cssQuiz(){
+  $("button#html-nav").click(function cssQuiz(){
     $("#css-hidden").hide();
     $("#js-hidden").hide();
     $("#html-hidden").slideToggle();
   });
-});   
+});
 $(document).ready(function() {
-  $("button ").click(function htmlQuiz(){
+  $("button#css-nav").click(function htmlQuiz(){
     $("#js-hidden").hide();
     $("#html-hidden").hide();
     $("#css-hidden").fadeIn();
   });
 });
-// calculating marks for each question
- function jsmarks() {
-   // var score = 0;
-   // $(".clac:checked").each(function() {
-   //  score += parseInt($(this).val(), 10);
-   // });
-  alert("score")
- }
+// calculating marks for each question  using a loop
+ // function jsmarks() {
+ //   var score = 0;
+ //   $("count:checked").each(function() {
+ //    score += parseInt($(this).val(),10);
+ //   });
+ //  alert(score);
+ // }

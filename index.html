@@ -18,27 +18,28 @@
         <progress id="progressbar" value="0" max="100" ></progress>
         <br><br>
         <div class="ninja-practise">
-          <h4>Select your code dojo</h4>
+          <h4>Select your code Dojo</h4>
         </div>
         <div class="quiz-buttons">
-          <button type="button" name="button" onclick="javascriptQuiz()" class="btn">JavaScript</button>
+          <button type="button" name="button" onclick="javascriptQuiz()" class="btn" id="js-nav">JavaScript</button>
           <br>
             <div style="height:10px"class="button-spacer"></div>
-          <button type="button" name="button" onclick="htmlQuiz()"class="btn">Html</button>
+          <button type="button" name="button" onclick="htmlQuiz()"class="btn" id="html-nav">Html</button>
           <br>
           <div style="height:10px"class="button-spacer"></div>
-          <button type="button" name="button" onclick="cssQuiz()"class="btn">Css</button>
+          <button type="button" name="button" onclick="cssQuiz()"class="btn"id="css-nav">Css</button>
         </div>
         <br>
-        </div>
         <button type="button" name="button" onClick="reset()" class="btn"  id="reset">Retake quiz</button>
+        </div>
+
   </div>
   <body>
     <div class="container">
       <div class="jumbotron">
         <div class="heading1">
           <h1>Quiz Board</h1>
-          <h4>Test your might Code Ninja</h4>
+          <h4 > Test your might Code Ninja</h4>
         </div>
       </div>
       <!-- jumbotron wrap -->
@@ -177,8 +178,8 @@
                 </div>
             </div>
       </div>
-      <button id="jsbut"onClick="jsmarks()"type="button" name="button" class="btn">Submit</button>
-      <div id="js-results">
+      <button onClick="jsmarks()"type="button" name="button" class="btn" id="jsSubmit">Submit</button>
+      <div id="jsresults">
 
       </div>
       </form>
@@ -318,12 +319,12 @@
                  </div>
              </div>
        </div>
-       <button  id="cssSubmit"onClick="js-marks"type="button" name="button" class="btn">Submit</button>
+       <button  onClick="cssmarks()"type="button" name="button" class="btn" id="cssSubmit">Submit</button>
        <div id="css-results">
        </div>
        </form>
        </div>
-    </div>
+
     <!-- css form wrap -->
     <div id="html-hidden">
      <form id="html-quiz">
@@ -459,12 +460,13 @@
                </div>
            </div>
      </div>
-     <button id="htmlSubmit" onClick="html-marks"type="button" name="button" class="btn">Submit</button>
+     <button onClick="htmlmarks()"type="button" name="button" class="btn" id="htmlSubmit">Submit</button>
      <div id="html-results">
 
      </div>
      </form>
      </div>
+   </div>
      <!-- html form wrap -->
   <!-- container class wrap -->
   <script  src="js/scripts.js"></script>
