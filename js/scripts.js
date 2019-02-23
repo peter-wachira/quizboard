@@ -3,30 +3,6 @@
     Author     : Peter Wachira
 */
 // scroll functions
-$("#question1").click(function() {
-  $('html,body,form').animate({
-      scrollTop: $(".#question2").offset().top
-    },
-    'slow');
-});
-$("#question2").click(function() {
-  $('html,body,form').animate({
-      scrollTop: $("#question3").offset().top
-    },
-    'slow');
-});
-$("#question3").click(function() {
-  $('html,body,form').animate({
-      scrollTop: $("#question4").offset().top
-    },
-    'slow');
-});
-$("#question4").click(function() {
-  $('html,body,form').animate({
-      scrollTop:$("#question5").offset().top
-    },
-    'slow');
-});
 // scrolldown progress bar
 $(window).scroll(function() {
   var s = $(window).scrollTop(),
@@ -34,14 +10,37 @@ $(window).scroll(function() {
     c = $(window).height();
   scrollPercent = (s / (d - c)) * 100;
   var position = scrollPercent;
-
   $("#progressbar").attr('value', position);
 
 });
-
+// unhide buttons  Dojo options
 $(document).ready(function() {
-  $("button").click(function() {
-    $("#javascript-quiz").hide();
-    $("#display").show();
+  $("button ").click(function javascriptQuiz(){
+    $("#css-hidden").hide();
+    $("#html-hidden").hide();
+    $("#js-hidden").slideToggle();
+  });
+
+});
+$(document).ready(function() {
+  $("button # ").click(function cssQuiz(){
+    $("#css-hidden").hide();
+    $("#js-hidden").hide();
+    $("#html-hidden").slideToggle();
   });
 });
+$(document).ready(function() {
+  $("button ").click(function htmlQuiz(){
+    $("#js-hidden").hide();
+    $("#html-hidden").hide();
+    $("#css-hidden").fadeIn();
+  });
+});
+// calculating marks for each question
+ function jsmarks() {
+   // var score = 0;
+   // $(".clac:checked").each(function() {
+   //  score += parseInt($(this).val(), 10);
+   // });
+  alert("score")
+ }

@@ -12,7 +12,7 @@
   </head>
   <div class="sidebar">
        <div class="sidebar-items">
-        <img class="img-rounded" height="200px" width="200"src="resources/codeninja1.png" alt="" onclick="this.src='img/certified.png'">
+        <img class="img-rounded" height="200px" width="200"src="resources/codeninja1.png" alt="" onclick="this.src='resources/codeninjasub.png'">
         <br><br>
         <a href="#about">Strength</a>
         <progress id="progressbar" value="0" max="100" ></progress>
@@ -21,13 +21,13 @@
           <h4>Select your code dojo</h4>
         </div>
         <div class="quiz-buttons">
-          <button type="button" name="button" onclick="javaScript-quiz" class="btn">JavaScript</button>
+          <button type="button" name="button" onclick="javascriptQuiz()" class="btn">JavaScript</button>
           <br>
             <div style="height:10px"class="button-spacer"></div>
-          <button type="button" name="button" onclick="css-quiz"class="btn">Html</button>
+          <button type="button" name="button" onclick="htmlQuiz()"class="btn">Html</button>
           <br>
           <div style="height:10px"class="button-spacer"></div>
-          <button type="button" name="button" onclick="css-quiz"class="btn">Css</button>
+          <button type="button" name="button" onclick="cssQuiz()"class="btn">Css</button>
         </div>
         <br>
         </div>
@@ -48,135 +48,136 @@
         <div class="col-md-12">
           <div class="well">
             <ol>
-              <li id="question1">Which of the following is a <strong>JavaScript</strong> output method</li>
+
+              <li>Which of the following is a <strong>JavaScript</strong> output method</li>
                    <div class="radio">
                     <label>
-                      <input type="radio" name="js1" value="10" required>
+                      <input class="count" type="radio" name="js1" value="10" required />
                       alert ( );
                     </label>
                    </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js1" value="0">
+                        <input class="count" type="radio" name="js1" value="0">
                         find ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js1" value="0">
+                        <input class="count" type="radio" name="js1" value="0">
                         prompt ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js1" value="0">
+                        <input class="count" type="radio" name="js1" value="0">
                         Search ( );
                       </label>
                     </div>
-              <li id="question2">Which of the following is a <strong>JavaScript</strong> output method</li>
+              <li>Which of the following is a <strong>JavaScript</strong> output method</li>
                    <div class="radio">
                     <label>
-                      <input type="radio" name="j2" value="10">
+                      <input class="count" type="radio" name="j2" value="10">
                       alert ( );
                     </label>
                    </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js2" value="0">
+                        <input class="count" type="radio" name="js2" value="0">
                         find ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js2" value="0">
+                        <input class="count" type="radio" name="js2" value="0">
                         prompt ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js2" value="0">
+                        <input class="count" type="radio" name="js2" value="0">
                         Search ( );
                       </label>
                     </div>
-              <li id="question3">Which of the following is a <strong>JavaScript</strong> output method</li>
+              <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                    <div class="radio">
                     <label>
-                      <input type="radio" name="js3" value="10">
+                      <input class="count" type="radio" name="js3" value="10">
                       alert ( );
                     </label>
                    </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js3" value="0">
+                        <input class="count" type="radio" name="js3" value="0">
                         find ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js3" value="0">
+                        <input class="count" type="radio" name="js3" value="0">
                         prompt ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="js3" value="0">
+                        <input class="count" type="radio" name="js3" value="0">
                         Search ( );
                       </label>
                     </div>
-             <li id="question4">Which of the following is a <strong>JavaScript</strong> output method</li>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                   <div class="radio">
                    <label>
-                     <input type="radio" name="js4" value="10">
+                     <input class="count" type="radio" name="js4" value="10">
                      alert ( );
                    </label>
                   </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js4" value="0">
+                       <input class="count" type="radio" name="js4" value="0">
                        find ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js4" value="0">
+                       <input class="count" type="radio" name="js4" value="0">
                        prompt ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js4" value="0">
+                       <input class="count" type="radio" name="js4" value="0">
                        Search ( );
                      </label>
                    </div>
-                   <li id="question5">Which of the following is not present in <strong>Javascript</strong> </li>
+                   <li >Which of the following is not present in <strong>Javascript</strong> </li>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js5" value="10">
+                       <input class="count" type="radio" name="js5" value="10">
                        append ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js5" value="0">
+                       <input class="count" type="radio" name="js5" value="0">
                         before( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js5" value="0">
+                       <input class="count" type="radio" name="js5" value="0">
                         after ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="js5" value="0">
+                       <input class="count" type="radio" name="js5" value="0">
                        pretend ( );
                      </label>
                    </div>
                 </div>
             </div>
       </div>
-      <button onClick="js-marks"type="button" name="button" class="btn">Submit</button>
+      <button id="jsbut"onClick="jsmarks()"type="button" name="button" class="btn">Submit</button>
       <div id="js-results">
 
       </div>
@@ -189,135 +190,135 @@
          <div class="col-md-12">
            <div class="well">
              <ol>
-               <li id="question1">Which of the following is a <strong>JavaScript</strong> output method</li>
+               <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                     <div class="radio">
                      <label>
-                       <input type="radio" name="css1" value="10" required>
+                       <input class="count1" type="radio" name="css1" value="10" required>
                        alert ( );
                      </label>
                     </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css1" value="0">
+                         <input class="count1" type="radio" name="css1" value="0">
                          find ( );
                        </label>
                      </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css1" value="0">
+                         <input class="count1" type="radio" name="css1" value="0">
                          prompt ( );
                        </label>
                      </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css1" value="0">
+                         <input class="count1" type="radio" name="css1" value="0">
                          Search ( );
                        </label>
                      </div>
-               <li id="question2">Which of the following is a <strong>JavaScript</strong> output method</li>
+               <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                     <div class="radio">
                      <label>
-                       <input type="radio" name="css2" value="10">
+                       <input class="count1" type="radio" name="css2" value="10">
                        alert ( );
                      </label>
                     </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css2" value="0">
+                         <input class="count1" type="radio" name="css2" value="0">
                          find ( );
                        </label>
                      </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css2" value="0">
+                         <input class="count1" type="radio" name="css2" value="0">
                          prompt ( );
                        </label>
                      </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css2" value="0">
+                         <input class="count1" type="radio" name="css2" value="0">
                          Search ( );
                        </label>
                      </div>
-               <li id="question3">Which of the following is a <strong>JavaScript</strong> output method</li>
+               <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                     <div class="radio">
                      <label>
-                       <input type="radio" name="css3" value="10">
+                       <input class="count1" type="radio" name="css3" value="10">
                        alert ( );
                      </label>
                     </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css3" value="0">
+                         <input class="count1" type="radio" name="css3" value="0">
                          find ( );
                        </label>
                      </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css3" value="0">
+                         <input class="count1" type="radio" name="css3" value="0">
                          prompt ( );
                        </label>
                      </div>
                      <div class="radio">
                        <label>
-                         <input type="radio" name="css3" value="0">
+                         <input class="count1" type="radio" name="css3" value="0">
                          Search ( );
                        </label>
                      </div>
-              <li id="question4">Which of the following is a <strong>JavaScript</strong> output method</li>
+              <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                    <div class="radio">
                     <label>
-                      <input type="radio" name="css4" value="10">
+                      <input class="count1" type="radio" name="css4" value="10">
                       alert ( );
                     </label>
                    </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css4" value="0">
+                        <input class="count1" type="radio" name="css4" value="0">
                         find ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css4" value="0">
+                        <input class="count1" type="radio" name="css4" value="0">
                         prompt ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css4" value="0">
+                        <input class="count1" type="radio" name="css4" value="0">
                         Search ( );
                       </label>
                     </div>
-                    <li id="question5">Which of the following is not present in <strong>Javascript</strong> </li>
+                    <li >Which of the following is not present in <strong>Javascript</strong> </li>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css5" value="10">
+                        <input class="count1" type="radio" name="css5" value="10">
                         append ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css5" value="0">
+                        <input class="count1" type="radio" name="css5" value="0">
                          before( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css5" value="0">
+                        <input class="count1" type="radio" name="css5" value="0">
                          after ( );
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="css5" value="0">
+                        <input class="count1" type="radio" name="css5" value="0">
                         pretend ( );
                       </label>
                     </div>
                  </div>
              </div>
        </div>
-       <button onClick="js-marks"type="button" name="button" class="btn">Submit</button>
+       <button  id="cssSubmit"onClick="js-marks"type="button" name="button" class="btn">Submit</button>
        <div id="css-results">
        </div>
        </form>
@@ -330,135 +331,135 @@
        <div class="col-md-12">
          <div class="well">
            <ol>
-             <li id="question1">Which of the following is a <strong>JavaScript</strong> output method</li>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                   <div class="radio">
                    <label>
-                     <input type="radio" name="html1" value="10" required>
+                     <input class="count2" type="radio" name="html1" value="10" required>
                      alert ( );
                    </label>
                   </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html1" value="0">
+                       <input class="count2" type="radio" name="html1" value="0">
                        find ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html1" value="0">
+                       <input class="count2" type="radio" name="html1" value="0">
                        prompt ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html1" value="0">
+                       <input class="count2" type="radio" name="html1" value="0">
                        Search ( );
                      </label>
                    </div>
-             <li id="question2">Which of the following is a <strong>JavaScript</strong> output method</li>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                   <div class="radio">
                    <label>
-                     <input type="radio" name="html2" value="10">
+                     <input class="count2" type="radio" name="html2" value="10">
                      alert ( );
                    </label>
                   </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html2" value="0">
+                       <input class="count2" type="radio" name="html2" value="0">
                        find ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html2" value="0">
+                       <input class="count2" type="radio" name="html2" value="0">
                        prompt ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html2" value="0">
+                       <input class="count2" type="radio" name="html2" value="0">
                        Search ( );
                      </label>
                    </div>
-             <li id="question3">Which of the following is a <strong>JavaScript</strong> output method</li>
+             <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                   <div class="radio">
                    <label>
-                     <input type="radio" name="html3" value="10">
+                     <input class="count2" type="radio" name="html3" value="10">
                      alert ( );
                    </label>
                   </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html3" value="0">
+                       <input class="count2" type="radio" name="html3" value="0">
                        find ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="htlml3" value="0">
+                       <input class="count2" type="radio" name="htlml3" value="0">
                        prompt ( );
                      </label>
                    </div>
                    <div class="radio">
                      <label>
-                       <input type="radio" name="html3" value="0">
+                       <input class="count2" type="radio" name="html3" value="0">
                        Search ( );
                      </label>
                    </div>
-            <li id="question4">Which of the following is a <strong>JavaScript</strong> output method</li>
+            <li >Which of the following is a <strong>JavaScript</strong> output method</li>
                  <div class="radio">
                   <label>
-                    <input type="radio" name="html4" value="10">
+                    <input class="count2" type="radio" name="html4" value="10">
                     alert ( );
                   </label>
                  </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html4" value="0">
+                      <input class="count2" type="radio" name="html4" value="0">
                       find ( );
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html4" value="0">
+                      <input class="count2" type="radio" name="html4" value="0">
                       prompt ( );
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html4" value="0">
+                      <input class="count2" type="radio" name="html4" value="0">
                       Search ( );
                     </label>
                   </div>
-                  <li id="question5">Which of the following is not present in <strong>Javascript</strong> </li>
+                  <li >Which of the following is not present in <strong>Javascript</strong> </li>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html5" value="10">
+                      <input class="count2" type="radio" name="html5" value="10">
                       append ( );
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html5" value="0">
+                      <input class="count2" type="radio" name="html5" value="0">
                        before( );
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html5" value="0">
+                      <input class="count2" type="radio" name="html5" value="0">
                        after ( );
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="html5" value="0">
+                      <input class="count2" type="radio" name="html5" value="0">
                       pretend ( );
                     </label>
                   </div>
                </div>
            </div>
      </div>
-     <button onClick="js-marks"type="button" name="button" class="btn">Submit</button>
+     <button id="htmlSubmit" onClick="html-marks"type="button" name="button" class="btn">Submit</button>
      <div id="html-results">
 
      </div>
