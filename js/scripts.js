@@ -42,7 +42,7 @@ $(document).ready(function() {
     $("#js-hidden").hide();
     $("#html-hidden").slideToggle();
   });
-});   
+});
 $(document).ready(function() {
   $("button#css-nav").click(function htmlQuiz(){
     $("#js-hidden").hide();
@@ -86,7 +86,7 @@ $(document).ready(function() {
     document.getElementById("html-results").innerHTML = " your percentage score was " + percentage + "%";
   });
  });
-
+//diplay results
  // scrolldown progress bar
  $(window).scroll(function() {
    var s = $(window).scrollTop(),
