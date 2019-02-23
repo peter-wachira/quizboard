@@ -6,23 +6,14 @@
 function pageReset() {
     window.location.reload();
 }
-$("#reset").click(function() {
+$("#reset").click(function reset() {
   $('html,body').animate({
       scrollTop: $(".container").offset().top
     },
     'slow');
 });
 
-// scrolldown progress bar
-$(window).scroll(function() {
-  var s = $(window).scrollTop(),
-    d = $(document).height(),
-    c = $(window).height();
-  scrollPercent = (s / (d - c)) * 100;
-  var position = scrollPercent;
-  $("#progressbar").attr('value', position);
 
-});
 // unhide buttons  Dojo options
 $(document).ready(function() {
   $("button#js-nav").click(function javascriptQuiz(){
@@ -46,11 +37,49 @@ $(document).ready(function() {
     $("#css-hidden").fadeIn();
   });
 });
-// IDEA:  calculating marks for each question  using a loop
- // function jsmarks() {
- //   var score = 0;
- //   $("count:checked").each(function() {
- //    score += parseInt($(this).val(),10);
- //   });
- //  alert(score);
- // }
+
+//
+// // IDEA:  calculating marks for each question  using a loop that loops through all the radio buttons per question
+ $(document).ready(function(){
+   $("button#jsSubmit").click(function jsmarks(event){
+     var score = 0;
+     $("input:radio[name=js1]:checked,input:radio[name=js2]:checked,input:radio[name=js3]:checked,input:radio[name=js4]:checked,input:radio[name=js5]:checked").each(function() {
+       count = score += parseInt($(this).val());
+       percentage = (count/50)*100;
+     });
+    alert(percentage);
+  });
+ });
+
+ $(document).ready(function(){
+   $("button#cssSubmit").click(function cssmarks(event){
+     var score = 0;
+     $("input:radio[name=css1]:checked,input:radio[name=css2]:checked,input:radio[name=css3]:checked,input:radio[name=css4]:checked,input:radio[name=css5]:checked").each(function() {
+     // score += parseInt($(this).val());
+     count = score += parseInt($(this).val());
+     percentage = (count/50)*100;
+     });
+    alert(percentage);
+  });
+ });
+
+ $(document).ready(function(){
+   $("button#htmlSubmit").click(function htmlmarks(event){
+     var score = 0;
+     $("input:radio[name=html1]:checked,input:radio[name=html2]:checked,input:radio[name=html3]:checked,input:radio[name=html4]:checked,input:radio[name=html5]:checked").each(function() {
+       count = score += parseInt($(this).val());
+       percentage = (count/50)*100;
+     });
+    alert(percentage);
+  });
+ });
+ // scrolldown progress bar
+ $(window).scroll(function() {
+   var s = $(window).scrollTop(),
+     d = $(document).height(),
+     c = $(window).height();
+   scrollPercent = (s / (d - c)) * 100;
+   var position = scrollPercent;
+   $("#progressbar").attr('value', position);
+
+ });
