@@ -4960,12 +4960,13 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #deecff;
+  background-color: #decdc3;
 
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+  font-family: 'Abril Fatface', cursive;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -5032,7 +5033,7 @@ a.thumbnail.active {
   border-radius: 4px;
 }
 .alert h4 {
-  margin-top: 0;    
+  margin-top: 0;
   color: inherit;
 }
 .alert .alert-link {

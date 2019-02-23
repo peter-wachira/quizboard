@@ -3,7 +3,7 @@
     Author     : Peter Wachira
 */
 body {
-  background-color: rgba(249,229,188,0.9);
+  background-color: #5c848e;
 }
 .container{
   margin-left: 18%;
@@ -12,19 +12,19 @@ body {
 h1,h2,h3,h4{
   text-align:center;
 }
-h1{
-  color:#21174a;
+h4{
+ font-family: 'Playfair Display SC', serif;
 }
 .ninja-practise{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-family: 'Black And White Picture', sans-serif;
   color: #818181;
   display: block;
+  font-family: 'Playfair Display SC', serif;
 }
 .ninja-practise h4{
  font-size: 30px;
- font-family: 'Black And White Picture', sans-serif;
+ font-family: 'Playfair Display SC', serif;
 }
  .ninja-practise h4:hover {
   color: #f1f1f1;
@@ -35,7 +35,7 @@ h1{
   width: 18%;
   position: fixed;
   z-index: 1;
-  background-color:#33313b;
+  background-color:#1d2323;
   overflow-x: hidden;
   overflow-y: hidden;
   padding-top: 40px;
@@ -46,8 +46,8 @@ h1{
 .sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 50px;
-  font-family: 'Black And White Picture', sans-serif;
+  font-size: 30px;
+  font-family: 'Playfair Display SC', serif;
   color: #818181;
   display: block;
 }
@@ -62,5 +62,4 @@ form{
 /*  styling for hiding quizes*/
 #js-hidden , #css-hidden , #html-hidden{
   display:none;
-
 }
