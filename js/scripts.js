@@ -3,18 +3,31 @@
     Author     : Peter Wachira
 */
 // page reset
-function pageReset() {
-    window.location.reload();
-}
-$("#reset").click(function reset() {
+//Business logic
+
+
+//navigation  panel
+
+$("#resetjs").click(function reset() {
+  $('html,body').animate({
+      scrollTop: $(".container").offset().top
+    },
+    'slow');
+});
+$("#resetcss").click(function reset() {
+  $('html,body').animate({
+      scrollTop: $(".container").offset().top
+    },
+    'slow');
+});
+$("#resethtml").click(function reset() {
   $('html,body').animate({
       scrollTop: $(".container").offset().top
     },
     'slow');
 });
 
-
-// unhide buttons  Dojo options
+// Un hide buttons  Dojo options
 $(document).ready(function() {
   $("button#js-nav").click(function javascriptQuiz(){
     $("#css-hidden").hide();
@@ -47,7 +60,7 @@ $(document).ready(function() {
        count = score += parseInt($(this).val());
        percentage = (count/50)*100;
      });
-    alert(percentage);
+    document.getElementById("js-results").innerHTML = " your percentage score was " + percentage + "%";
   });
  });
 
@@ -59,7 +72,7 @@ $(document).ready(function() {
      count = score += parseInt($(this).val());
      percentage = (count/50)*100;
      });
-    alert(percentage);
+      document.getElementById("css-results").innerHTML = " your percentage score was " + percentage + "%";
   });
  });
 
@@ -70,9 +83,10 @@ $(document).ready(function() {
        count = score += parseInt($(this).val());
        percentage = (count/50)*100;
      });
-    alert(percentage);
+    document.getElementById("html-results").innerHTML = " your percentage score was " + percentage + "%";
   });
  });
+
  // scrolldown progress bar
  $(window).scroll(function() {
    var s = $(window).scrollTop(),
@@ -81,5 +95,4 @@ $(document).ready(function() {
    scrollPercent = (s / (d - c)) * 100;
    var position = scrollPercent;
    $("#progressbar").attr('value', position);
-
  });
