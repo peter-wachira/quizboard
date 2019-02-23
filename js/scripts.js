@@ -3,9 +3,16 @@
     Author     : Peter Wachira
 */
 // page reset
-  function pageReset() {
+function pageReset() {
     window.location.reload();
 }
+$("#reset").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".container").offset().top
+    },
+    'slow');
+});
+
 // scrolldown progress bar
 $(window).scroll(function() {
   var s = $(window).scrollTop(),
@@ -39,7 +46,7 @@ $(document).ready(function() {
     $("#css-hidden").fadeIn();
   });
 });
-// calculating marks for each question  using a loop
+// IDEA:  calculating marks for each question  using a loop
  // function jsmarks() {
  //   var score = 0;
  //   $("count:checked").each(function() {
