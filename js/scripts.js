@@ -28,7 +28,7 @@ $(document).ready(function() {
     $("#js-hidden").hide();
     $("#html-hidden").slideToggle();
   });
-});
+});   
 $(document).ready(function() {
   $("button ").click(function htmlQuiz(){
     $("#js-hidden").hide();

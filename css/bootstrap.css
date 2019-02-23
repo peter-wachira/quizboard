@@ -4961,7 +4961,7 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #deecff;
-  
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5032,7 +5032,7 @@ a.thumbnail.active {
   border-radius: 4px;
 }
 .alert h4 {
-  margin-top: 0;
+  margin-top: 0;    
   color: inherit;
 }
 .alert .alert-link {
