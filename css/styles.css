@@ -63,3 +63,10 @@ form{
 #js-hidden , #css-hidden , #html-hidden{
   display:none;
 }
+/*  results animation*/
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 2s 1 normal both,
+             blinkTextCursor 900ms steps(66) infinite normal;
+             animation-iteration-count: infinite;
+}
+#
