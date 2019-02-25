@@ -14,6 +14,8 @@ Quiz-Board is a web app that allows a user  to attempt a few questions to test t
 | Gathers user input | retrieve values from the form types | validates the inputs |
 | Calculates the input values from the use  | radio button values | adds the values|
 | Awards marks| Based on the inputs entered| Displays the final score|
+|Reset form |Retake button is clicked |Resets the form radio buttons|
+|Scrolls to the top | Retake button clicked | Scrolls to the top|
 
 
 ## Setup/Installation Requirements
