@@ -4960,12 +4960,17 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
+<<<<<<< HEAD
   background-color: #deecff;
+=======
+  background-color: #decdc3;
+>>>>>>> gh-pages
 
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+  font-family: 'Abril Fatface', cursive;
 }
 .jumbotron p {
   margin-bottom: 15px;

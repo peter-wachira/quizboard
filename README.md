@@ -27,7 +27,7 @@ currently i have not encountered any bugs,incase you encounter other bugs please
 * CSS
 * HTML
 * Javascript
-* To get access to a live demo click this link    
+* To get access to a live demo click this link  https://peter-wachira.github.io/quizboard/   
 
 ### License
 * MIT License
