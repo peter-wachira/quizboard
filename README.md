@@ -4,7 +4,7 @@
 #### By **Peter Wachira**
 ## Description
 Quiz-Board is a web app that allows a user  to attempt a few questions to test their JavaScript,CSS and HTML knowledge using different Quizzes, These quizzes use the analogy of a Dojo where ninjas train. Each question has marks allocated to it,the Code ninja (User) has to view more of the quiz questions to increase strength.    
-
+       
 
 ## Behavior Driven Development (BDD)
 

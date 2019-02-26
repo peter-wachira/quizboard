@@ -48,9 +48,9 @@ $(document).ready(function() {
     $("#js-hidden").hide();
     $("#html-hidden").hide();
     $("#css-hidden").fadeIn();
-  });       
+  });
 });
-
+       
 //
 // // IDEA:  calculating marks for each question  using a loop that loops through all the radio buttons per question
 $(document).ready(function() {
