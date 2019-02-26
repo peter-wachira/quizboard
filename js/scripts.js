@@ -48,7 +48,7 @@ $(document).ready(function() {
     $("#js-hidden").hide();
     $("#html-hidden").hide();
     $("#css-hidden").fadeIn();
-  });
+  });       
 });
 
 //
