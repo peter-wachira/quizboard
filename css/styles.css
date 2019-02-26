@@ -5,44 +5,50 @@
 body {
   background-color: #5c848e;
 }
-.container{
+
+.container {
   margin-left: 18%;
-  width:82%;
+  width: 82%;
   font-family: 'Quicksand', sans-serif;
 }
-h1,h2,h3,h4{
-  text-align:center;
+
+h1, h2, h3, h4 {
+  text-align: center;
 }
-h4{
- font-family: 'Playfair Display SC', serif;
+
+h4 {
+  font-family: 'Playfair Display SC', serif;
 }
-.ninja-practise{
+
+.ninja-practise {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   color: #818181;
   display: block;
   font-family: 'Playfair Display SC', serif;
 }
-.ninja-practise h4{
- font-size: 30px;
- font-family: 'Playfair Display SC', serif;
+
+.ninja-practise h4 {
+  font-size: 30px;
+  font-family: 'Playfair Display SC', serif;
 }
- .ninja-practise h4:hover {
+
+.ninja-practise h4:hover {
   color: #5d3a3a;
 }
+
 /*  sidebar styling */
 .sidebar {
   height: 100%;
   width: 18%;
   position: fixed;
   z-index: 1;
-  background-color:#f5e4c3;
+  background-color: #f5e4c3;
   overflow-x: hidden;
   overflow-y: hidden;
   padding-top: 40px;
   text-align: center;
 }
-
 
 .sidebar a {
   padding: 6px 8px 6px 16px;
@@ -53,23 +59,26 @@ h4{
   display: block;
 }
 
-
 .sidebar a:hover {
   color: #5d3a3a;
 }
-form{
+
+form {
   text
 }
+
 /*  styling for hiding quizes*/
-#js-hidden , #css-hidden , #html-hidden{
-  display:none;
+#js-hidden, #css-hidden, #html-hidden {
+  display: none;
 }
+
 /*  results animation*/
-#html-results,#js-results,#css-results{
+#html-results, #js-results, #css-results {
   text-align: center;
   font-family: 'Playfair Display SC', serif;
   font-size: 30px;
 }
-.well{
+
+.well {
   background-color: #fff4e3;
 }
