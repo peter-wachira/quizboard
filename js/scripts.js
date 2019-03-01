@@ -3,8 +3,8 @@
     Author     : Peter Wachira
 */
 // page reset
-//Business logic
 
+//user interface
 
 //navigation  panel
 
@@ -48,9 +48,20 @@ $(document).ready(function() {
     $("#js-hidden").hide();
     $("#html-hidden").hide();
     $("#css-hidden").fadeIn();
-  });       
+  });
 });
 
+// scrolldown progress bar
+$(window).scroll(function() {
+  var s = $(window).scrollTop(),
+    d = $(document).height(),
+    c = $(window).height();
+  scrollPercent = (s / (d - c)) * 100;
+  var position = scrollPercent;
+  $("#progressbar").attr('value', position);
+});
+
+//Business logic
 //
 // // IDEA:  calculating marks for each question  using a loop that loops through all the radio buttons per question
 $(document).ready(function() {
@@ -87,12 +98,3 @@ $(document).ready(function() {
   });
 });
 //diplay results
-// scrolldown progress bar
-$(window).scroll(function() {
-  var s = $(window).scrollTop(),
-    d = $(document).height(),
-    c = $(window).height();
-  scrollPercent = (s / (d - c)) * 100;
-  var position = scrollPercent;
-  $("#progressbar").attr('value', position);
-});
