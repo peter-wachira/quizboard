@@ -3,9 +3,9 @@
     Author     : Peter Wachira
 */
 // page reset
-//Business logic
 
 
+//user interface
 //navigation  panel
 
 $("#resetjs").click(function reset() {
@@ -22,7 +22,7 @@ $("#resetcss").click(function reset() {
 });
 $("#resethtml").click(function reset() {
   $('html,body').animate({
-      scrollTop: $(".container").offset().top
+         scrollTop: $(".container").offset().top
     },
     'slow');
 });
@@ -50,7 +50,21 @@ $(document).ready(function() {
     $("#css-hidden").fadeIn();
   });
 });
-       
+
+//diplay results
+// scrolldown progress bar
+$(window).scroll(function() {
+  var s = $(window).scrollTop(),
+    d = $(document).height(),
+    c = $(window).height();
+  scrollPercent = (s / (d - c)) * 100;
+  var position = scrollPercent;
+  $("#progressbar").attr('value', position);
+});
+
+
+
+//Business logic
 //
 // // IDEA:  calculating marks for each question  using a loop that loops through all the radio buttons per question
 $(document).ready(function() {
@@ -85,14 +99,4 @@ $(document).ready(function() {
     });
     document.getElementById("html-results").innerHTML = " your percentage score was " + percentage + "%";
   });
-});
-//diplay results
-// scrolldown progress bar
-$(window).scroll(function() {
-  var s = $(window).scrollTop(),
-    d = $(document).height(),
-    c = $(window).height();
-  scrollPercent = (s / (d - c)) * 100;
-  var position = scrollPercent;
-  $("#progressbar").attr('value', position);
 });
